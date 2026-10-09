@@ -12,21 +12,21 @@ afterEach(() => {
     host = undefined;
 });
 
-test('shows the endpoint and only the allowed tools', () => {
+test('shows the endpoint and only the allowed tools', async () => {
     setConfig({ allow_write_tools: false });
     host = createExtensionTestHost({ extensionId: 'mcp', prefix: 'mcp' });
     render(<McpScreen />, { wrapper: host.Wrapper });
 
-    expect(screen.getAllByText(/\/api\/client\/extensions\/mcp/).length).toBeGreaterThan(0);
+    expect((await screen.findAllByText(/\/api\/client\/extensions\/mcp/)).length).toBeGreaterThan(0);
     expect(screen.getByText('send_command')).toBeTruthy();
     expect(screen.queryByText('write_file')).toBeNull();
 });
 
-test('lists write tools once an administrator allows them', () => {
+test('lists write tools once an administrator allows them', async () => {
     setConfig({ allow_write_tools: true });
     host = createExtensionTestHost({ extensionId: 'mcp', prefix: 'mcp' });
     render(<McpScreen />, { wrapper: host.Wrapper });
 
-    expect(screen.getByText('write_file')).toBeTruthy();
+    expect(await screen.findByText('write_file')).toBeTruthy();
     expect(screen.getByText('create_backup')).toBeTruthy();
 });
