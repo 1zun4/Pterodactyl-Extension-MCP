@@ -1,0 +1,11 @@
+{
+    "description": "Let AI assistants like Claude, ChatGPT and Gemini manage your servers over the Model Context Protocol.",
+    "autoload": {
+        "psr-4": {
+            "PterodactylMcp\\": "src/"
+        }
+    },
+    "config": {
+        "autoloader-suffix": "PterodactylMcpExtension"
+    }
+}
