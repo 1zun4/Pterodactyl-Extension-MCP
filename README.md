@@ -1,9 +1,9 @@
 # MCP for Pterodactyl
 
-[![Release](https://img.shields.io/github/v/release/1zun4/Pterodactyl-Extension-MCP?style=flat-square)](https://github.com/1zun4/Pterodactyl-Extension-MCP/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/1zun4/Pterodactyl-Extension-MCP/total?style=flat-square)](https://github.com/1zun4/Pterodactyl-Extension-MCP/releases)
+[![Release](https://img.shields.io/github/v/release/CCBlueX/Pterodactyl-Extension-MCP?style=flat-square)](https://github.com/CCBlueX/Pterodactyl-Extension-MCP/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/CCBlueX/Pterodactyl-Extension-MCP/total?style=flat-square)](https://github.com/CCBlueX/Pterodactyl-Extension-MCP/releases)
 [![Pterodactyl](https://img.shields.io/badge/Pterodactyl-2.0-0e4688?style=flat-square)](https://pterodactyl.io)
-[![License](https://img.shields.io/github/license/1zun4/Pterodactyl-Extension-MCP?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/github/license/CCBlueX/Pterodactyl-Extension-MCP?style=flat-square)](LICENSE)
 
 Let AI assistants like Claude manage your game servers over the [Model Context Protocol](https://modelcontextprotocol.io).
 
@@ -11,7 +11,7 @@ Let AI assistants like Claude manage your game servers over the [Model Context P
 
 ## Install
 
-1. Download `mcp-<version>.pteroext` from the [latest release](https://github.com/1zun4/Pterodactyl-Extension-MCP/releases/latest).
+1. Download `mcp-<version>.pteroext` from the [latest release](https://github.com/CCBlueX/Pterodactyl-Extension-MCP/releases/latest).
 2. Open **Admin → Extensions**, click **Install** and pick the file.
 3. Enable it. Users find the setup steps under **Account → AI Assistants**.
 
